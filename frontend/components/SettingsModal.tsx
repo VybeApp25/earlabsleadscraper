@@ -124,7 +124,7 @@ export default function SettingsModal({ onClose }: Props) {
   };
 
   return (
-    <div className="fixed inset-0 bg-black/80 backdrop-blur-md z-[9999] flex items-center justify-center p-4" onClick={onClose}>
+    <div className="fixed inset-0 bg-black/95 backdrop-blur-sm z-[9999] flex items-center justify-center p-4" onClick={onClose}>
       <div className="bg-surface-800 border border-surface-600 rounded-2xl w-full max-w-2xl shadow-2xl max-h-[90vh] flex flex-col relative z-[9999]"
         onClick={(e) => e.stopPropagation()}>
 
