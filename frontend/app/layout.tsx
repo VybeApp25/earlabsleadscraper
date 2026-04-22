@@ -9,7 +9,20 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className="dark" suppressHydrationWarning>
+    <html lang="en" suppressHydrationWarning>
+      <head>
+        <script dangerouslySetInnerHTML={{
+          __html: `
+            try {
+              const s = localStorage.getItem('ear-labs-store');
+              const theme = s ? JSON.parse(s).state?.theme : 'dark';
+              document.documentElement.classList.add(theme || 'dark');
+            } catch(e) {
+              document.documentElement.classList.add('dark');
+            }
+          `
+        }} />
+      </head>
       <body>
         {children}
         <Toaster

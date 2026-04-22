@@ -60,6 +60,7 @@ body {
 .light .bg-black { background-color: #f1f5f9 !important; }
 .light .bg-black\/60 { background-color: rgba(241,245,249,0.85) !important; }
 .light .bg-black\/80 { background-color: rgba(241,245,249,0.92) !important; }
+.light .bg-black\/95 { background-color: rgba(241,245,249,0.97) !important; }
 
 ::-webkit-scrollbar { width: 6px; height: 6px; }
 ::-webkit-scrollbar-track { background: var(--surface); }
